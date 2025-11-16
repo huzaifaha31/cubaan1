@@ -1,0 +1,27 @@
+body {
+    /* Sets "Tajawal" as the primary font for the application, ensuring Arabic text is rendered beautifully. */
+    font-family: 'Tajawal', sans-serif;
+}
+
+/* * CHART CONTAINER STYLING 
+ * This class ensures the Chart.js canvas is centered and responsive, 
+ * maintaining a good aspect ratio on smaller screens.
+ */
+.chart-container {
+    position: relative;
+    width: 100%;
+    /* Max width prevents the chart from becoming too wide on large screens */
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+    /* Base height for smaller screens */
+    height: 350px; 
+    max-height: 400px;
+}
+
+/* Adjusts the chart height for tablet/desktop screens (768px and up) */
+@media (min-width: 768px) {
+    .chart-container {
+        height: 400px;
+    }
+}
